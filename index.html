@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morning Star Style Box</title>
 
     <!-- Google web fonts -->
@@ -9,17 +10,23 @@
       href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    -->
 
     <!-- The main CSS file -->
+    
     <link href="morningstarstyle.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="main">
+    <div class="container">
       <h2 id="head">Morning Star Style Box</h2>
     
       <div class="tooltip">
-        <p>Please Select fund investment style:</p>
+        <div class="selectedList">
+        <p>Please Select fund investment style: </p>
 
         <select id="investmentFund">
           <option value="Value">Value</option>
@@ -29,13 +36,13 @@
 
         <p>Please Select market capital:</p>
         <select id="marketCapital">
-          <option value="High" id="d">High</option>
-          <option value="Mid" id="e">Mid</option>
-          <option value="Low" id="f">Low</option>
+          <option value="High">High</option>
+          <option value="Mid">Mid</option>
+          <option value="Low">Low</option>
         </select>
-        <br />
-        <br />
-
+        <br/>
+        <br/>
+      </div>
         <div id="parent" class="parent">
           <h4>Fund Investment Style</h4>
           <br>
@@ -45,6 +52,7 @@
         </div>
         <div class="parentChild">
           <h4>Size</h4>
+          <br>
           <br>
           <div class="secondChild">High</div><br>
           <div class="secondChild">Mid</div><br>
